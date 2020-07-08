@@ -1,0 +1,7 @@
+{
+  "name": "sysgps",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

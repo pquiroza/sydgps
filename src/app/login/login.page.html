@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-img [src]="'/assets/sydgps.jpeg'" padding-vertical>
+
+    </ion-img >
+    <ion-item>
+      <ion-label position="stacked">Usuario <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" id="usuario" #usuario></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Password s<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="password" id="password" #password></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="login(usuario.value,password.value)">Ingresar</ion-button>
+
+</ion-content>

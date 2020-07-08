@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+     <ion-buttons slot="primary">
+       <ion-button>
+         Estado
+       </ion-button>
+     </ion-buttons>
+
+     <ion-title>SysGPS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div>
+<ion-item>
+  <ion-label slot="start" color="light">Estado del Servicio</ion-label>
+  <ion-toggle slot="end" (ionChange)="cambiaEstado($event)"></ion-toggle>
+  </ion-item>
+<ion-item>
+  <ion-label slot="start" color="light">ID del Dispositivo</ion-label>
+    <ion-input  size="tel" color="light"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label slot="start" color="light">URL del Servidor</ion-label>
+      <ion-input size="text" color="light"></ion-input>
+    </ion-item>
+
+  </div>
+</ion-content>
